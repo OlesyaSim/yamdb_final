@@ -1,3 +1,4 @@
+
 # api_yamdb
 
 Описание: REST API для YaMDb Создан на основе библиотеки Django REST Framework (DRF)
@@ -7,6 +8,7 @@ YaMDb - это платформа для сбора отзывов и оцено
 Технологии Python 3.7
 
 Django 3.2.15
+
 
 ### шаблон наполнения env-файла
 DB_ENGINE
@@ -50,4 +52,8 @@ http://127.0.0.1:8000/api/v1/titles/
   
   "slug": "string"
 }
+
+### Статус работы workflow
+
+![example workflow](https://github.com/OlesyaSim/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
