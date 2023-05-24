@@ -10,11 +10,7 @@ services:
 
   web:
     container_name: web
-    build:
-      context: ..
-      dockerfile: api_yamdb/Dockerfile
-    image: olesimka/api_yamdb-web:latest
-#    image: olesimka/sprint16:latest
+    image: olesimka/sprint16
     ports:
       - "8000:8000"
     restart: always

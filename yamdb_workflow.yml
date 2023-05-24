@@ -50,7 +50,7 @@ jobs:
 
   deploy:
     name: Deploy
-    runs-on: unubutu-20.04
+    runs-on: ubuntu-20.04
     needs: push_to_hub
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
 
