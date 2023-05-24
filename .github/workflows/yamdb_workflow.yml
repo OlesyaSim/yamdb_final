@@ -62,13 +62,13 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker compose stop
-            sudo docker compose rm web
-            sudo docker pull olesimka/sprint16:latest
-            sudo docker compose up -d
-#            sudo docker pull olesimka/sprint16
-#            sudo docker stop $(sudo docker ps -a -q)
-#            sudo docker run --rm -d -p 5000:5000 olesimka/sprint16
+#            sudo docker compose stop
+#            sudo docker compose rm web
+#            sudo docker pull olesimka/sprint16:latest
+#            sudo docker compose up -d
+            sudo docker pull olesimka/sprint16
+            sudo docker stop $(sudo docker ps -a -q)
+            sudo docker run --rm -d -p 5000:5000 olesimka/sprint16
 
   send_message:
     runs-on: ubuntu-latest
