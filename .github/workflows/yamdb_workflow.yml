@@ -54,6 +54,7 @@ jobs:
     needs: push_to_hub
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
 
+# добавляю пробелы, а не таб
     steps:
       - name: Execute ssh commands
         uses: appleboy/ssh-action@v0.1.10
