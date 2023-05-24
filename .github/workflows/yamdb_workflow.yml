@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: push_to_hub
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
-
+# установаила
     steps:
       - name: Execute ssh commands
         uses: appleboy/ssh-action@v0.1.10
