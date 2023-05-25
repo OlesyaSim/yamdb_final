@@ -1,7 +1,7 @@
 name: cicd_test_deploy
 
 on: [push]
-
+# изменения для пуша
 jobs:
   tests:
     name: Pytest
@@ -61,11 +61,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-#          script: |
-#            sudo docker compose stop
-#            sudo docker compose rm web
-#            sudo docker pull olesimka/sprint16:latest
-#            sudo docker compose up -d
           script: |
             sudo docker-compose stop
             sudo docker-compose rm web
