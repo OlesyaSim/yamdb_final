@@ -1,7 +1,7 @@
 name: cicd_test_deploy
 
 on: [push]
-# изменения для пуша
+
 jobs:
   tests:
     name: Pytest
