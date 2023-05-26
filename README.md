@@ -1,7 +1,7 @@
 
 # api_yamdb
 
-Посмотреть проект: http://158.160.45.239/admin/
+Посмотреть проект можно тут: http://158.160.45.239/admin/
 
 Описание: REST API для YaMDb Создан на основе библиотеки Django REST Framework (DRF)
 
