@@ -11,7 +11,7 @@ services:
   web:
     container_name: web
     image: olesimka/sprint16:latest
-    command: gunicorn config.wsgi:application --bind :8000 --workers 3
+    command: gunicorn api_yamdb.wsgi:application --bind :8000 --workers 3
     restart: always
     volumes:
       - static_value:/app/static/
