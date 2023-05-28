@@ -43,7 +43,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
         with:
-          context: .
+          context: ./api_yamdb
           file: ./api_yamdb/Dockerfile
           push: true
           tags: olesimka/sprint16:latest
@@ -57,8 +57,6 @@ jobs:
       - name: Execute ssh commands
         uses: appleboy/ssh-action@v0.1.10
         with:
-          context: ./api_yamdb
-          file: ./api_yamdb/Dockerfile
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
@@ -86,6 +84,3 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: ${{ github.workflow }} успешно выполнен!
-
-            
-
